@@ -33,6 +33,5 @@ public class CollectionVsStreamsDemo {
         nameStream.forEach(System.out::println); //viral, rohit //performing internal iteration
         //nameStream.forEach(System.out::println); //IllegalStateException: stream has already been operated upon or closed
 
-
     }
 }
