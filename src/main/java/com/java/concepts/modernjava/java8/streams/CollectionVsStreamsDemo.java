@@ -1,7 +1,6 @@
 package com.java.concepts.modernjava.java8.streams;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.stream.Stream;
 
 public class CollectionVsStreamsDemo {
@@ -13,7 +12,7 @@ public class CollectionVsStreamsDemo {
         names.add("virat");
         names.add("rohit");
         System.out.println(names); //[sachin, virat, rohit]
-        names.remove(0);
+        names.removeFirst();
         System.out.println(names); //[virat, rohit]
 
        //add or remove method is not available in stream, stream is immutable
