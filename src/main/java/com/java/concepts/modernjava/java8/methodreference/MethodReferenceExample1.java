@@ -1,4 +1,4 @@
-package concepts.java8.methodreference;
+package com.java.concepts.modernjava.java8.methodreference;
 
 public class MethodReferenceExample1 {
 
@@ -16,7 +16,7 @@ public class MethodReferenceExample1 {
     public static void main(String[] args){
 
         //referring static method
-        Sayable sayable = MethodReferenceExample1::saySomething; // say() method in interface sayable is defined
+       Sayable sayable = MethodReferenceExample1::saySomething; // say() method in interface sayable is defined
         //calling interface method
         sayable.say();
 
