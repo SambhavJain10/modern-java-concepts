@@ -6,5 +6,6 @@ public record QAEngineer(String name,
                          int id,
                          double experience,
                          List<String> skillSet,
-                         String location) {
+                         String location,
+                         int shares) {
 }

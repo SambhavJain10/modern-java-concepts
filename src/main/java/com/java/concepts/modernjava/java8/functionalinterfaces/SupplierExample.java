@@ -14,7 +14,7 @@ public class SupplierExample {
         System.out.println(supplier.get());
         List<String> skills = List.of("Java", "Python", "TypeScript");
         Supplier<QAEngineer> qaEngineerSupplier = () -> new QAEngineer("Sambhav",
-                05, 13.5, skills, "Pune");
+                05, 13.5, skills, "Pune", 500);
         System.out.println(qaEngineerSupplier.get());
 
         Supplier<List<QAEngineer>> qaEngineerListSupplier = QADatabase::getQAEngineers;
