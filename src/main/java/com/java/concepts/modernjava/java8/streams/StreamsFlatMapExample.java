@@ -14,10 +14,10 @@ public class StreamsFlatMapExample {
     public static Set<String> getQASkillSet(){
         return QADatabase.getQAEngineers()
                 .stream()
-                .map(QAEngineer::skillSet) //Stream<List<String>
+                .map(QAEngineer::skillSet) //Stream<List<String> //stateless intermediate operation
                 //.collect(toList()); //compile Error
-                .flatMap(List::stream) //Stream<String>
-                .collect(toSet());
+                .flatMap(List::stream) //Stream<String> //stateless intermediate operation
+                .collect(toSet()); //stateless terminal operation
     }
 
     static void main(String[] args) {

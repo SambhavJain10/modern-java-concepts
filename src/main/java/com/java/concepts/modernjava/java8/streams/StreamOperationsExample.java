@@ -31,10 +31,10 @@ public class StreamOperationsExample {
 
     public static long getCountOfUniqueSkillsSet(List<QAEngineer> qaEngineers){
         return qaEngineers.stream()
-                .map(QAEngineer::skillSet)
+                .map(QAEngineer::skillSet) //stateless intermediate operation
                 .flatMap(List::stream)
-                .distinct()
-                .count();
+                .distinct() //stateful intermediate operation
+                .count(); //terminal operation
     }
 
     static void main(String[] args) {
