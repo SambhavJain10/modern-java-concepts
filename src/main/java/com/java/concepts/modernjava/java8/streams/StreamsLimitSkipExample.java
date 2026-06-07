@@ -10,7 +10,7 @@ public class StreamsLimitSkipExample {
 
     static Optional<QAEngineer> limitQAExample(List<QAEngineer> qaEngineerList) {
         return qaEngineerList.stream()
-                .limit(2)
+                .limit(2) //shortCircuiting the stream to only the first 2 elements
                 .reduce((qa1, qa2) -> qa1.shares() > qa2.shares() ? qa1:qa2);
     }
 

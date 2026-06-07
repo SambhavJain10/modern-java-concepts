@@ -31,3 +31,7 @@ public class StreamsMatchExample {
 
     }
 }
+
+//These functions are also called short circuiting functions because they can return a result as soon as a match is found (for anyMatch and noneMatch)
+// or as soon as a non-match is found (for allMatch)
+//without needing to process the entire stream.
