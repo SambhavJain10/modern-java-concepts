@@ -107,5 +107,5 @@ mvn test -Dtest=ClassName
 ## 👤 Author
 
 **Sambhav Jain**  
-SDET Lead | QA Automation | Java | Playwright | REST Assured  
+SDET Lead | QA Automation | Java | Selenium | TypeScript | Playwright | REST Assured  
 [LinkedIn](https://www.linkedin.com/in/) · [GitHub](https://github.com/)
