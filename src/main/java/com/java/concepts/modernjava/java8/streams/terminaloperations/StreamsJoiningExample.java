@@ -4,7 +4,6 @@ import com.java.data.QADatabase;
 import com.java.data.QAEngineer;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.joining;
 
@@ -36,6 +35,5 @@ public class StreamsJoiningExample {
         System.out.println(joining_1(QADatabase.getQAEngineers()));
         System.out.println(joining_2(QADatabase.getQAEngineers()));
         System.out.println(joining_3(QADatabase.getQAEngineers()));
-
     }
 }
