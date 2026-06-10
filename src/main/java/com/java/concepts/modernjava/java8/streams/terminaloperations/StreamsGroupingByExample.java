@@ -3,10 +3,7 @@ package com.java.concepts.modernjava.java8.streams.terminaloperations;
 import com.java.data.QADatabase;
 import com.java.data.QAEngineer;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 import static java.util.stream.Collectors.*;
 
@@ -46,6 +43,18 @@ public class StreamsGroupingByExample {
                 ));
     }
 
+    public static Map<Double, Optional<QAEngineer>> groupingByWithMaxBy(List<QAEngineer> qaEngineers) {
+        return qaEngineers.stream()
+                .collect(groupingBy(QAEngineer::experience,
+                        maxBy(Comparator.comparingInt(QAEngineer::shares))));
+    }
+
+    public static Map<Double, Optional<QAEngineer>> groupingByWithMinBy(List<QAEngineer> qaEngineers) {
+        return qaEngineers.stream()
+                .collect(groupingBy(QAEngineer::experience,
+                        minBy(Comparator.comparingInt(QAEngineer::shares))));
+    }
+
     static void main(String[] args) {
 
         System.out.println(groupByLocation(QADatabase.getQAEngineers()));
@@ -63,5 +72,11 @@ public class StreamsGroupingByExample {
 
         System.out.println("Three argument grouping based on location and returning the set of QA Engineers:");
         System.out.println(threeArgumentGroupingBy(QADatabase.getQAEngineers()));
+        System.out.println("---------------------------");
+
+        System.out.println("Grouping by with maxBy:");
+        System.out.println(groupingByWithMaxBy(QADatabase.getQAEngineers()));
+        System.out.println("Grouping by with minBy:");
+        System.out.println(groupingByWithMinBy(QADatabase.getQAEngineers()));
     }
 }
