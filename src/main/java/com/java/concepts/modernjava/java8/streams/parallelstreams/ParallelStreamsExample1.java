@@ -4,10 +4,8 @@ import com.java.data.QADatabase;
 import com.java.data.QAEngineer;
 
 import java.util.List;
-import java.util.Set;
 
 import static java.util.stream.Collectors.toList;
-import static java.util.stream.Collectors.toSet;
 
 public class ParallelStreamsExample1 {
 
