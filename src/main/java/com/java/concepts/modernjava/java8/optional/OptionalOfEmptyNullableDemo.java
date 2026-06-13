@@ -23,6 +23,4 @@ public class OptionalOfEmptyNullableDemo {
         //System.out.println(usingOf(null).orElse("No name found")); //Throws NullPointerException
         System.out.println(usingEmpty().orElse("empty found"));
     }
-
-
 }
