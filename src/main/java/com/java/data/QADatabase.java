@@ -1,8 +1,12 @@
 package com.java.data;
 
 import java.util.List;
+import java.util.function.Supplier;
 
 public class QADatabase {
+
+    public static Supplier<QAEngineer> qaEngineerSupplier = () -> new QAEngineer("Rahul Devarkonda", 6, 3.4, List.of("Selenium", "Java", "TestNG", "Cypress"), "Bangalore", 70);
+    public static Supplier<QAEngineer> nullSupplier = () -> null;
 
     public static List<QAEngineer> getQAEngineers() {
         return List.of (
