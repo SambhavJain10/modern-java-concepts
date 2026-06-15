@@ -1,5 +1,9 @@
 package com.java.concepts.modernjava.java10beyond.patternmatching.recordpattern;
 
+import com.java.concepts.modernjava.java21.patternmatching.recordpattern.Animal;
+import com.java.concepts.modernjava.java21.patternmatching.recordpattern.AnimalService;
+import com.java.concepts.modernjava.java21.patternmatching.recordpattern.Cat;
+import com.java.concepts.modernjava.java21.patternmatching.recordpattern.Dog;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

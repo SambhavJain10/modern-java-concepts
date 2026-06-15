@@ -1,6 +1,6 @@
 package com.java.concepts.modernjava.java10beyond.patternmatching;
 
-import com.java.concepts.modernjava.java10beyond.patternmatching.typepattern.PatternMatchingExample;
+import com.java.concepts.modernjava.java21.patternmatching.typepattern.PatternMatchingExample;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;

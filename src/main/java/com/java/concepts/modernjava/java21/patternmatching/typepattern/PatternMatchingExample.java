@@ -1,4 +1,4 @@
-package com.java.concepts.modernjava.java10beyond.patternmatching.typepattern;
+package com.java.concepts.modernjava.java21.patternmatching.typepattern;
 
 public class PatternMatchingExample {
 
