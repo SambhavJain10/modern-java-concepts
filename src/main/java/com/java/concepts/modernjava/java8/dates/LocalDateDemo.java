@@ -3,7 +3,7 @@ package com.java.concepts.modernjava.java8.dates;
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
 
-public class LocalDateExample {
+public class LocalDateDemo {
 
     static void main(String[] args) {
 
