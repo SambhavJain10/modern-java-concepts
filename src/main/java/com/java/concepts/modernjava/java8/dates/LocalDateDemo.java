@@ -31,6 +31,11 @@ public class LocalDateDemo {
         System.out.println("withYear: " + localDate.withYear(2019));
         System.out.println("with ChronoField: " + localDate.with(ChronoField.YEAR, 2020));
 
+        //additional functions
+        System.out.println("is the current Year Leap Year: " +localDate.isLeapYear());
+        System.out.println("is Equal: " +localDate.isEqual(localDate1));
+        System.out.println("is Before: " +localDate.isBefore(localDate2));
+
 
     }
 }
