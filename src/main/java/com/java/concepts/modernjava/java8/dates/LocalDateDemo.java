@@ -35,7 +35,5 @@ public class LocalDateDemo {
         System.out.println("is the current Year Leap Year: " +localDate.isLeapYear());
         System.out.println("is Equal: " +localDate.isEqual(localDate1));
         System.out.println("is Before: " +localDate.isBefore(localDate2));
-
-
     }
 }
